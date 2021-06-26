@@ -1,6 +1,14 @@
-var nombre = prompt('Ingresa tu Nombre:');
-alert('Hola '+nombre+'. Ya podes Hacer la cuenta que quieras.')
-var resultados = []
+cargarNombre()
+var resultados = [];
+
+function cargarNombre() {
+    var nombre = prompt('Ingresa tu Nombre:');
+    if (nombre == '') {
+        cargarNombre();
+    } else {
+        alert('Hola '+nombre+'. Ya podes Hacer la cuenta que quieras.');
+    }
+}
 
 function calculo() {
     var rsdo;
