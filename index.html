@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 del Curso de javascript</title>
+    <!-- MI CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Clase 1 del Curso de javascript</h1>
+    <br>
+    <br>
+    <h4>Calculadora</h4>
+    <br>
+    <span>Valor 1</span><input type="number" name="val1" id="val1" value="3">
+    <br>
+    <span>Valor 2</span><input type="number" name="val2" id="val2" value="5">
+    <br>
+    <br>
+    <select name="" id="oper" onchange="calculo()">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multi">Multiplicación</option>
+        <option value="divi">División</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="calculo()">Calcular</button>
+    <br>
+    <br>
+    <span>Resultado: </span><input type="number" id="rsdo">
+    <script src="js/clase1.js" type="text/javascript"></script>
+</body>
+</html>
